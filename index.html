@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConerStone Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="card" id="app">
+    <!-- Welcome Screen -->
+    <div class="screen screen-welcome active" id="screenWelcome">
+      <div class="logo">🧠</div>
+      <h1>ConerStone Quiz</h1>
+      <p>Test your tech knowledge!</p>
+      <div class="input-group">
+        <input type="text" id="nameInput" placeholder="Enter your name" maxlength="15" autocomplete="off" />
+        <input type="text" id="classNameInput" placeholder="Class name (optional)" maxlength="30" autocomplete="off" />
+        <div class="topic-selector">
+          <span class="topic-label">Choose topic:</span>
+          <div class="topic-btns">
+            <button class="topic-btn selected" data-topic="all">All</button>
+            <button class="topic-btn" data-topic="HTML">HTML</button>
+            <button class="topic-btn" data-topic="CSS">CSS</button>
+            <button class="topic-btn" data-topic="JavaScript">JavaScript</button>
+          </div>
+        </div>
+        <div class="error-msg" id="errorMsg"></div>
+        <button class="btn btn-primary" id="startBtn">Start Quiz</button>
+      </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div class="screen screen-quiz" id="screenQuiz">
+      <div class="quiz-header">
+        <div>
+          <div class="user-greeting" id="userGreeting">👋 Hi, </div>
+          <div class="class-greeting" id="classGreeting"></div>
+        </div>
+        <span class="question-count" id="questionCount">1 / 15</span>
+      </div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progressFill"></div>
+      </div>
+      <div class="timer-wrap">
+        <div class="timer-bar" id="timerBar"></div>
+        <span class="timer-text" id="timerText">15s</span>
+      </div>
+      <div class="question-text" id="questionText">Loading...</div>
+      <div class="choices" id="choicesContainer"></div>
+    </div>
+
+    <!-- Results Screen -->
+    <div class="screen screen-results" id="screenResults">
+      <div class="result-icon" id="resultIcon">🎉</div>
+      <h2>Quiz Complete!</h2>
+      <div class="result-score" id="resultScore">0 / 15</div>
+      <div class="result-message" id="resultMessage">Great job!</div>
+      <div class="review-wrap" id="reviewWrap">
+        <div class="review-list" id="reviewList"></div>
+      </div>
+      <button class="btn btn-primary" id="restartBtn">🔄 Play Again</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
