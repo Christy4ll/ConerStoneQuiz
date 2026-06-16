@@ -22,7 +22,8 @@ const questions = [
   { topic: "JavaScript", text: "Which operator checks both value AND type?", choices: ["==", "===", "=", "!="], answer: "===" },
   { topic: "JavaScript", text: "Which function shows a popup message?", choices: ["print()", "message()", "alert()", "popup()"], answer: "alert()" },
   { topic: "JavaScript", text: "What is the full meaning of JS?", choices: ["john salad", "Journal script", "JavaScript", "jambscore"], answer: "JavaScript" },
-  { topic: "JavaScript", text: "in the development of a website, which of this is referreed to as the brain", choices: ["html", "css", "JavaScript", "language"], answer: "JavaScript" }
+  { topic: "JavaScript", text: "in the development of a website, which of this is referreed to as the brain", choices: ["html", "css", "JavaScript", "language"], answer: "JavaScript" },
+  { topic: "JavaScript", text: "Who invented JaveScript?", choices: ["Brendan Eich in 1995", "Charles Babage", "Danny Tompson", "Tom and Jerry"], answer: "Brendan Eich in 1995" }
 ];
 
 const screens = {
