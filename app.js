@@ -7,6 +7,11 @@ const questions = [
   { topic: "HTML", text: "Which attribute specifies an image's source?", choices: ["href", "src", "link", "img"], answer: "src" },
   { topic: "HTML", text: "Which element creates an unordered list?", choices: ["<ol>", "<ul>", "<list>", "<dl>"], answer: "<ul>" },
   { topic: "HTML", text: "Which heading tag is the largest?", choices: ["<h6>", "<h1>", "<heading>", "<h0>"], answer: "<h1>" },
+  { topic: "HTML", text: "Which element is used to link up html and css file?", choices: ["text-align center", "link tag", "image tag", "javascript"], answer: "link tag" },
+  { topic: "HTML", text: "Html can be describe as the structure of?", choices: ["Webpage", "link tag", "image tag", "javascript"], answer: "Webpage" },
+  { topic: "HTML", text: "Which html tag makes content visible on the webpage?", choices: ["h1 tag", "title tag", "body tag", "img tag"], answer: "body tag" },
+  { topic: "HTML", text: "What is a paragraph used for?", choices: ["Webpage", "Main container", "image tag", "Structure blocks of text on a webpage"], answer: "Structure blocks of text on a webpage" },
+  { topic: "HTML", text: "What is a mark-up language?", choices: ["css", "html", "javascript", "css and html"], answer: "html" },
 
   // CSS (5)
   { topic: "CSS", text: "What does CSS stand for?", choices: ["Cascading Style Sheets", "Computer Style Sheets", "Creative Style System", "Colorful Style Sheets"], answer: "Cascading Style Sheets" },
@@ -14,16 +19,24 @@ const questions = [
   { topic: "CSS", text: "How do you select an element with id \"main\"?", choices: [".main", "#main", "/main", "main"], answer: "#main" },
   { topic: "CSS", text: "Which property adds space INSIDE an element?", choices: ["margin", "padding", "spacing", "border"], answer: "padding" },
   { topic: "CSS", text: "Which property makes text bold?", choices: ["font-weight", "text-style", "font-bold", "bold"], answer: "font-weight" },
+  { topic: "CSS", text: "What is the symbol used to end a css statement?", choices: ["semi colum", "double quote", "square bracket", "bold"], answer: "semi colum" },
+  { topic: "CSS", text: "How do you style this element <p> About Me <p> in css?", choices: ["add the selector p {}", "add the \"About me\" text", "add the \"h1\" tag", "all of the above"], answer: "add the selector p {}" },
+  { topic: "CSS", text: "Which css property is used to change the position of an element or a text on a webpage?", choices: ["font-style", "position", "text-align", "color"], answer: "text-align" },
+  { topic: "CSS", text: "What is the purpose of css?", choices: ["To structure webpage content", "to style and format webpage content", "to store webpage data", "to connect to database"], answer: "to style and format webpage content" },
+  { topic: "CSS", text: "Which CSS feature allows a webpage to adapt to different screen sizes?", choices: ["Animation", "Media Queries", "Selectors", "Comments"], answer: "Media Queries" },
+
 
   // JavaScript (5)
-  { topic: "JavaScript", text: "Which keyword declares a variable?", choices: ["int", "var", "define", "declare"], answer: "var" },
+  { topic: "JavaScript", text: "Which keyword declares a variable in JavaScript?", choices: ["int", "let", "define", "declare"], answer: "let" },
   { topic: "JavaScript", text: "Which symbol is for single-line comments?", choices: ["/*", "//", "#", "<!--"], answer: "//" },
-  { topic: "JavaScript", text: "Which method adds an element to the end of an array?", choices: ["push()", "pop()", "append()", "add()"], answer: "push()" },
+  { topic: "JavaScript", text: "Which method adds an element to the end of an array in JavaScript?", choices: ["push()", "pop()", "append()", "add()"], answer: "push()" },
   { topic: "JavaScript", text: "Which operator checks both value AND type?", choices: ["==", "===", "=", "!="], answer: "===" },
   { topic: "JavaScript", text: "Which function shows a popup message?", choices: ["print()", "message()", "alert()", "popup()"], answer: "alert()" },
   { topic: "JavaScript", text: "What is the full meaning of JS?", choices: ["john salad", "Journal script", "JavaScript", "jambscore"], answer: "JavaScript" },
-  { topic: "JavaScript", text: "in the development of a website, which of this is referreed to as the brain", choices: ["html", "css", "JavaScript", "language"], answer: "JavaScript" },
-  { topic: "JavaScript", text: "Who invented JaveScript?", choices: ["Brendan Eich in 1995", "Charles Babage", "Danny Tompson", "Tom and Jerry"], answer: "Brendan Eich in 1995" }
+  { topic: "JavaScript", text: "In Web Development, which of this is referreed to as the brain of a website", choices: ["html", "css", "JavaScript", "language"], answer: "JavaScript" },
+  { topic: "JavaScript", text: "Who invented JaveScript?", choices: ["Brendan Eich in 1995", "Charles Babage", "Danny Tompson", "Tom and Jerry"], answer: "Brendan Eich in 1995" },
+  { topic: "JavaScript", text: "Where do we run our javascript program?", choices: ["computer", "on the browser", "index.html", "style.css"], answer: "on the browser" },
+  { topic: "JavaScript", text: "What Data type is this: let greeting = \"Hello, World\" in JavaScript", choices: ["number", "boolean", "object", "string"], answer: "string" }
 ];
 
 const screens = {
